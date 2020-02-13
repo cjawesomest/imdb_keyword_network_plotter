@@ -112,6 +112,8 @@ def findMovies(searchTerm):
                 movie_name = split_line[2].split('<')[0][1:]
                 # print(split_line[1])
                 # print(split_line[2].split('<')[0][1:])
+                if '&amp;' in movie_name:
+                    movie_name = movie_name.replace('&amp;', '&')
                 if not movie_link in movieLinks and not movie_name in movieNames:
                     movieLinks.append(movie_link)
                     movieNames.append(movie_name)
@@ -119,6 +121,19 @@ def findMovies(searchTerm):
                 found_movie = 0
             idx += 1
     return movieLinks, movieNames
+
+def getCastAppearances(performer_to_name, link_to_cast_dict, link_to_movie_dict):
+    performer_to_movies = dict()
+    for performer in performer_to_name.keys():
+        # dictionary key: dict(performer_link) = [list of movies]
+        print(performer_to_name[performer]+" has appeared in...")
+        performer_to_movies[performer] = []
+        for movie in link_to_cast_dict.keys():
+            for cast_member in link_to_cast_dict[movie]:
+                if cast_member == performer:
+                    print("\t-"+link_to_movie_dict[movie])
+                    performer_to_movies[performer].append(link_to_movie_dict[movie])
+    return performer_to_movies
 
 def aggregateInfo(links, names):
     movieLinkToMovieNameDict = dict()
@@ -139,4 +154,5 @@ def aggregateInfo(links, names):
             else:
                 castLinkToCastNameDict[performer_link] = castNames[per_idx]
             per_idx += 1
-    return movieLinkToMovieNameDict, movieLinkToMovieCastDict, castLinkToCastNameDict
+    castLinkToMovieNames = getCastAppearances(castLinkToCastNameDict, movieLinkToMovieCastDict, movieLinkToMovieNameDict)
+    return movieLinkToMovieNameDict, movieLinkToMovieCastDict, castLinkToCastNameDict, castLinkToMovieNames
