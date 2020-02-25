@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2172243-7312-4372-a790-dbb2aaf04f84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/imdb_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network_plot_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/network_plot_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +28,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Archives III\School\4 College\4 Junior\Winter Term\HNRS304 Networks in the Info Age\Final Project\doc" />
+      <recent name="D:\Archives III\School\4 College\4 Junior\Winter Term\HNRS304 Networks in the Info Age\Final Project\src" />
       <recent name="D:\Archives III\School\4 College\4 Junior\Winter Term\HNRS304 Networks in the Info Age\Final Project\Reference" />
     </key>
   </component>
@@ -125,17 +125,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Reference/aspects_of_creation.py</url>
+          <url>file://$PROJECT_DIR$/ref/aspects_of_creation.py</url>
           <line>310</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
+          <url>file://$PROJECT_DIR$/src/main.py</url>
           <line>69</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/imdb_utils.py</url>
+          <url>file://$PROJECT_DIR$/src/imdb_utils.py</url>
           <line>158</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
