@@ -139,6 +139,7 @@ def aggregateInfo(links, names):
     movieLinkToMovieNameDict = dict()
     movieLinkToMovieCastDict = dict()
     castLinkToCastNameDict = dict()
+    cast_num = 0
     for idx in range(len(links)):
         if links[idx] in movieLinkToMovieNameDict.keys():
             print("Found a duplicate flick : " + names[idx])
@@ -152,6 +153,7 @@ def aggregateInfo(links, names):
             if performer_link in castLinkToCastNameDict.keys():
                 print("Found a duplicate performer : " + castLinkToCastNameDict[performer_link])
             else:
+                cast_num += 1
                 castLinkToCastNameDict[performer_link] = castNames[per_idx]
             per_idx += 1
     castLinkToMovieNames = getCastAppearances(castLinkToCastNameDict, movieLinkToMovieCastDict, movieLinkToMovieNameDict)
