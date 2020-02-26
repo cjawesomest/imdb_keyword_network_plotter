@@ -16,8 +16,7 @@ if __name__ == '__main__':
     if not two_queries_flag:
         search_term_2 = ''
     import_flag: bool = True
-    # search_term_1 = 'Marvel Cinematic Universe'
-    search_term_1 = 'Planet of the Apes'
+    search_term_1 = 'Marvel Cinematic Universe'
     search_term_2 = 'High School Musical'
     # search_term_1 = 'Star Wars'
     # search_term_2 = 'Lord of the Rings'
